@@ -1,0 +1,38 @@
+OBIETTIVO RICORSIONE -> trovare misurazioni che massimizzano il numero 
+                        totale di persone coinvolte. 
+                        
+ Condizioni: 1)  ore di disservizio del sottoinsieme di eventi selezionati deve essere sempre 
+                 minore o uguale del valore Y inserito dall’utente nell’interfaccia grafica
+                 [somma(hours) <= Y]
+                 
+             2)  differenza tra l’anno dell’evento più recente e l’anno di quello più vecchio deve essere 
+                 sempre minore o uguale del numero di anni X
+                 [differenza(anno_misura_n e anno_misura_1) <= x] 
+                 
+  - passo la lista di PowerOutages di un determinato Nerc
+  - passo una lista vuota di PowerOutages come Parziale
+  - livello = 0
+  
+  //condizione di terminazione -> quando ho controllato tutto?
+ if( years == 3 )
+ Double numCostumers = calcolaCostumers(parziale);
+ if (best == null || numCostumers < calcolaCostumers(best))
+				best = new ArrayList<>(parziale);
+				
+per Y=3
+casesList: 
+2004
+2004
+2005
+2006
+2007
+
+	Soluzioni:			
+2004 -> parziale lv 0
+2004 -> parizale lv 1 
+2005 -> parziale lv 2
+2006 -> parziale lv 3
+
+2005 -> parziale lv 0
+2006 -> parziale lv 1 
+2007 -> parziale lv 2 

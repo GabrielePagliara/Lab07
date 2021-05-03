@@ -13,7 +13,7 @@ public class TestPowerOutagesDAO {
 			
 			PowerOutageDAO dao = new PowerOutageDAO() ;
 			
-			System.out.println(dao.getNercList()) ;
+			System.out.println(dao.getPowerOutagesList(10).toString()) ;
 
 		} catch (Exception e) {
 			System.err.println("Test FAILED");
